@@ -20,7 +20,7 @@ const dishes = [
   },
   {
     name: "Vegan Energy Mix",
-    image: "https://images.unsplash.com/photo-1516685018646-5499d0a7d42f?auto=format&fit=crop&w=400&q=80",
+    image: "/images/06.jpg",
     description: "100% plant-based with no dairy, perfect for clean eating.",
     rating: 5,
     ratingsCount: 5,
@@ -28,7 +28,7 @@ const dishes = [
   },
   {
     name: "Kids' Nutri-Brown",
-    image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
+    image: "/images/06.jpg",
     description: "Soft blend for toddlers, fortified with iron and calcium.",
     rating: 5,
     ratingsCount: 5,
