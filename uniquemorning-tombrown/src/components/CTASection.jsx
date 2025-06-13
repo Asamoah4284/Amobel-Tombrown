@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 const CTASection = () => (
   <div className="bg-[#f9fafc]">
   <section className="flex flex-col md:flex-row items-center justify-between gap-12 max-w-screen-xl mx-auto px-4 md:px-[5vw] overflow-x-clip">
@@ -16,7 +18,7 @@ const CTASection = () => (
       <div className="flex items-center gap-6">
         {/* Order delivery button */}
         <a
-          href="https://wa.me/233000000000"
+          href="https://wa.me/233555020816"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#ffd233] text-[#23223a] font-semibold px-7 py-4 rounded-md shadow-sm hover:bg-yellow-300 transition text-base"
@@ -49,9 +51,60 @@ const CTASection = () => (
       />
 
       {/* Decorative shapes */}
-      <div className="absolute w-6 h-6 bg-[#ffd233] rounded-full z-20 top-5 right-10 md:top-10 md:right-12"></div>
-      <div className="absolute w-5 h-5 bg-[#ffd233] rounded-full z-20 bottom-8 left-8 md:bottom-12 md:left-12"></div>
-      <div className="absolute w-24 h-24 md:w-[110px] md:h-[110px] border-[10px] border-white rounded-full z-30 bottom-0 right-0 translate-x-1/3 translate-y-1/3"></div>
+      <motion.div 
+        className="absolute w-6 h-6 bg-[#ffd233] rounded-full z-20 top-5 right-10 md:top-10 md:right-12"
+        animate={{
+          y: [-10, 10, -10],
+          scale: [1, 1.2, 1],
+          opacity: [0.8, 1, 0.8]
+        }}
+        transition={{
+          duration: 1.5,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      ></motion.div>
+      
+      <motion.div 
+        className="absolute w-5 h-5 bg-[#ffd233] rounded-full z-20 bottom-8 left-8 md:bottom-12 md:left-12"
+        animate={{
+          y: [10, -10, 10],
+          scale: [1, 1.3, 1],
+          opacity: [0.7, 1, 0.7]
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 0.3
+        }}
+      ></motion.div>
+      
+      <motion.div 
+        className="absolute w-24 h-24 md:w-[110px] md:h-[110px] border-[10px] border-white rounded-full z-30 bottom-0 right-0 translate-x-1/3 translate-y-1/3"
+        animate={{
+          y: [-15, 15, -15],
+          rotate: [0, 360],
+          scale: [1, 1.1, 1]
+        }}
+        transition={{
+          y: {
+            duration: 2.5,
+            repeat: Infinity,
+            ease: "easeInOut"
+          },
+          rotate: {
+            duration: 10,
+            repeat: Infinity,
+            ease: "linear"
+          },
+          scale: {
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }
+        }}
+      ></motion.div>
     </div>
   </section>
   </div>

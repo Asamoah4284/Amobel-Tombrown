@@ -23,6 +23,7 @@ const MoreThanExpectedSection = () => {
 
   return (
     <section 
+      id="about"
       ref={sectionRef}
       className="relative flex flex-col md:flex-row items-center justify-center gap-x-12 max-w-screen-xl mx-auto min-h-[70vh] px-4 md:px-[5vw] py-16 overflow-x-clip"
     >

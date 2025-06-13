@@ -6,6 +6,8 @@ import TestimonialsSection from '../components/TestimonialsSection'
 import CTASection from '../components/CTASection'
 import Footer from '../components/Footer'
 import PopularDishesSection from '../components/PopularDishesSection'
+import ContactSection from '../components/ContactSection'
+import HomeAppliancesSection from '../components/HomeAppliancesSection'
 
 const HomePage = () => {
   return (
@@ -32,7 +34,9 @@ const HomePage = () => {
       </div>
       {/* <ProductSection /> */}
       <PopularDishesSection />
+      <HomeAppliancesSection />
       <TestimonialsSection />
+      <ContactSection />
       <CTASection />
       <Footer />
     </div>

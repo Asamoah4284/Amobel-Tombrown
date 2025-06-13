@@ -3,7 +3,7 @@ import React from "react";
 const dishes = [
   {
     name: "Classic Tom Brown ",
-    image: "/images/girl.png", // Placeholder, replace with real image
+    image: "/images/01-bg.png", // Placeholder, replace with real image
     
     description: "Made with millet, maize, and groundnuts.",
     rating: 5,
@@ -12,22 +12,21 @@ const dishes = [
   },
   {
     name: "Tom Brown with Dates ",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+    image: "/images/02-bg.png",
     description: "Enriched with natural date fruit for extra sweetness and fiber.",
     rating: 5,
     ratingsCount: 5,
     tag: null,
   },
   {
-    name: "Vegan Energy Mix",
-    image: "/images/06.jpg",
+    name: "Kids' Nutri-Brown",
+    image: "/images/03-bg.png",
     description: "100% plant-based with no dairy, perfect for clean eating.",
     rating: 5,
     ratingsCount: 5,
-    tag: { label: "Vegan", color: "bg-green-200 text-green-800" },
   },
   {
-    name: "Kids' Nutri-Brown",
+    name: "Energy Mix",
     image: "/images/06.jpg",
     description: "Soft blend for toddlers, fortified with iron and calcium.",
     rating: 5,
@@ -46,7 +45,7 @@ const StarRating = ({ count }) => (
 
 const PopularDishesSection = () => {
   return (
-    <section className="py-24 px-4 bg-white">
+    <section id="menu" className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12 gap-6">
           <div>
